@@ -33,8 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
         String message = mMessageEditText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
-        getResult.launch(intent);
-        //https://www.mongodb.com/developer/article/realm-startactivityforresult-registerForActivityResult-deprecated-android-kotlin/
+        startActivityForResult(intent, TEXT_REQUEST);
+
     }
 
     @Override

@@ -21,6 +21,7 @@ public class SecondActivity extends AppCompatActivity {
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
         TextView textView = findViewById(R.id.text_message);
+        mReply = findViewById(R.id.editText_second);
         textView.setText(message);
     }
 
